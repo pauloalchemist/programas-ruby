@@ -1,0 +1,7 @@
+banana
+laranja
+melão
+maçã
+uva
+cebola
+tomate
