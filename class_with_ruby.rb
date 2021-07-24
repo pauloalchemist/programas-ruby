@@ -1,4 +1,6 @@
 class Carro 
+  attr_reader :marca, :modelo, :cor, :tanque
+
   def initialize(marca, modelo, cor, tanque)
     @marca = marca 
     @modelo = modelo
@@ -12,6 +14,5 @@ class Carro
 end
 
 fusca = Carro.new(:Volks, :fusca, :branco, 40)
-p fusca
-puts fusca
+puts fusca.marca
 
