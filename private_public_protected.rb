@@ -3,9 +3,7 @@ class MinhaClasse
     puts 'm1'
   end
 
-  private
-
-  def m2
+  private def m2
     puts 'm2'
   end
 
@@ -16,5 +14,5 @@ end
 
 obj = MinhaClasse.new
 obj.m1
-obj.m2
+# obj.m2
 obj.m3
