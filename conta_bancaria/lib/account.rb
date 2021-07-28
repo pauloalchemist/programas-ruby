@@ -18,11 +18,11 @@ class Account
 
   private
 
-  def debit(value)
-    @value -= value
+  def debit(value_debit)
+    @value -= value_debit
   end
 
-  def deposit(value)
-    @value += value
+  def deposit(value_deposit)
+    @value += value_deposit
   end
 end
