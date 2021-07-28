@@ -16,7 +16,9 @@ class Account
     @value
   end
 
-  private def debit(value)
+  private
+
+  def debit(value)
     @value -= value
   end
 end
