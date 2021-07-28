@@ -3,6 +3,8 @@ class MinhaClasse
     puts 'm1'
   end
 
+  private
+
   def m2
     puts 'm2'
   end
