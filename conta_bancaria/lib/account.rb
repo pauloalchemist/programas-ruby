@@ -21,4 +21,8 @@ class Account
   def debit(value)
     @value -= value
   end
+
+  def deposit(value)
+    @value += value
+  end
 end
