@@ -4,9 +4,10 @@ class Account
     @value = init_value
   end
 
-  def tranfer(_other_account, value)
+  def tranfer(other_account, value)
     if balance >= value
-
+      debit(value)
+      other_account.deposit(value)
     else
       puts 'Não consegui transferir. Estou Liso.'
     end
@@ -21,6 +22,8 @@ class Account
   def debit(value_debit)
     @value -= value_debit
   end
+
+  protected
 
   def deposit(value_deposit)
     @value += value_deposit
