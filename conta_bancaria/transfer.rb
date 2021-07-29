@@ -7,3 +7,8 @@ conta_Paulo.tranfer(conta_Vanessa, 200)
 
 puts "Saldo de Paulo é: #{conta_Paulo.balance}"
 puts "Saldo de Vanessa é: #{conta_Vanessa.balance}"
+
+conta_Paulo.tranfer(conta_Vanessa, 400)
+
+puts "Saldo de Paulo é: #{conta_Paulo.balance}"
+puts "Saldo de Vanessa é: #{conta_Vanessa.balance}"
