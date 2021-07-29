@@ -1,0 +1,2 @@
+class RateAccount < account
+end
