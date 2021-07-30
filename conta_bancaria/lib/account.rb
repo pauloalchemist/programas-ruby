@@ -4,7 +4,7 @@ class Account
     @value = init_value
   end
 
-  def tranfer(other_account, value)
+  def transfer(other_account, value)
     if balance >= value
       debit(value)
       other_account.deposit(value)
