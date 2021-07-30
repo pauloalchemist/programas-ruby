@@ -9,7 +9,11 @@ conta_Paulo.transfer(conta_Vanessa, 200)
 puts "Saldo de Paulo é: #{conta_Paulo.balance}"
 puts "Saldo de Vanessa é: #{conta_Vanessa.balance}"
 
-conta_Paulo.transfer(conta_Vanessa, 400)
+begin
+  conta_Paulo.transfer(conta_Vanessa, 400) # deve falhar aqui
+rescue StandardError => e
+  p "Erro ao transferir: #{e.message}"
+end
 
 puts "Saldo de Paulo é: #{conta_Paulo.balance}"
 puts "Saldo de Vanessa é: #{conta_Vanessa.balance}"
