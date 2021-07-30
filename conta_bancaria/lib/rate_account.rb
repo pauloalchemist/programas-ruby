@@ -1,7 +1,7 @@
 class RateAccount < Account
+  RATE_WITHDRAW = 2
   def transfer(other_account, value)
     super
-    rate_withdraw = 2
-    debit(rate_withdraw)
+    debit(RATE_WITHDRAW)
   end
 end
