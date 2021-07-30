@@ -9,7 +9,7 @@ class Account
       debit(value)
       other_account.deposit(value)
     else
-      puts 'Não consegui transferir. Estou Liso.'
+      raise 'Não consegui transferir. Estou Liso.'
     end
   end
 
