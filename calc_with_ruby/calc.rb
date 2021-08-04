@@ -8,10 +8,23 @@ puts head.yellow
 
 calc = Calc.new
 
-puts 'Digite o primeiro número: '.blue
-num1 = gets.chomp.to_f
-puts 'Digite o segundo número: '.blue
-num2 = gets.chomp.to_f
+def available_operations
+  puts 'Digite soma ou + para somar dois números'
+end
 
-result = calc.sum(num1, num2)
-puts "O resultado da soma é #{result}".green
+loop do
+  available_operations
+
+  operation = gets.chomp
+
+  puts 'Digite o primeiro número: '.blue
+  num1 = gets.chomp.to_f
+  puts 'Digite o segundo número: '.blue
+  num2 = gets.chomp.to_f
+
+  result = case operation
+           when '+' || 'soma'
+             a = calc.sum(num1, num2)
+             puts "O resultado da soma é #{a}".green
+           end
+end
