@@ -9,8 +9,11 @@ puts head.yellow
 calc = Calc.new
 
 def available_operations
-  puts 'Digite Soma ou + para somar dois números'
-  puts 'Digite Soma ou + para somar dois números'
+  puts 'Digite Somar ou +'
+  puts 'Digite Subtrair ou -'
+  puts 'Digite Multiplicar ou *'
+  puts 'Digite Dividir ou /'
+  puts 'E para sair'
 end
 
 loop do
@@ -18,7 +21,7 @@ loop do
 
   operation = gets.chomp
 
-  if operation == 'E' || 'Exit'
+  if operation.casecmp?('E')
     puts 'Bye bye!!'.white
     exit(0)
   end
@@ -28,7 +31,7 @@ loop do
   puts 'Digite o segundo número: '.blue
   num2 = gets.chomp.to_f
 
-  sleep 5
+  # sleep 5
 
   result = case operation
            when '+', 'Somar'
