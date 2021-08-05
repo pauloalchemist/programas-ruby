@@ -1,5 +1,6 @@
 #! /usr/bin/env ruby
 
+require_relative './assets/menu'
 require_relative './assets/header'
 require_relative './lib/lib_calc'
 require 'awesome_print'
@@ -8,16 +9,8 @@ puts head.yellow
 
 calc = Calc.new
 
-def available_operations
-  puts 'Digite Somar ou +'
-  puts 'Digite Subtrair ou -'
-  puts 'Digite Multiplicar ou *'
-  puts 'Digite Dividir ou /'
-  puts 'E para sair'
-end
-
 loop do
-  available_operations
+  puts available_operations.white
 
   operation = gets.chomp
 
