@@ -19,7 +19,6 @@ def head
    |       o awesome_print instalado.     |#{' '}
    |     Veja o Readme para informações   |#{' '}
    |                                      |#{' '}
-   |                              Grupo4  |#{' '}
    ========================================#{' '}
    A calculadora está ativa...#{' '}
    Pressione Ctrl+C para sair a qualquer momento#{' '}
