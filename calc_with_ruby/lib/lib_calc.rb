@@ -15,10 +15,10 @@ class Calc
   end
 
   def divide(num1, num2)
-    if num2 > 0
-      num1 / num2
-    else
+    if num2.zero?
       raise 'Não é possível divisão por zero. Tente novamente.'
+    else
+      num1 / num2
     end
   end
 end
