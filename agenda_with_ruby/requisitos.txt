@@ -1,0 +1,6 @@
+Agenda
+posso incluir, alterar e excluir registros
+registro: nome, contato, CPF (valido)
+consultar os dados
+imprimir todos os registros de uma maneira bonita, bem formatada
+Rubygems: várias gems para formatação de tela (cor, caracteres especiais...)
