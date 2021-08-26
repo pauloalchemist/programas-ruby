@@ -1,7 +1,8 @@
+# teste
 def testando_lambda
-  l = lambda { return "Oi!" }
+  l = -> { return 'Oi!' }
   l.call
-  "Imprime isso."
+  'Imprime isso.'
 end
 
 puts testando_lambda
