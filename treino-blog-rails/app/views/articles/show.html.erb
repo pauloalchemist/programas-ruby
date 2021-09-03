@@ -9,7 +9,7 @@
                     data: { confirm: "Are you sure?" } %></li>
 </ul>
 
-<h2>Escreva aqui seu comentário:</h2>
+<h2>Deixe aqui seu comentário:</h2>
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
   <p>
     <%= form.label :commenter %><br>
