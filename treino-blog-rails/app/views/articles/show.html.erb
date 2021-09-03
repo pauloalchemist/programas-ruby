@@ -12,12 +12,12 @@
 <h2>Comentários</h2>
 <% @article.comments.each do |comment| %>
   <p>
-    <strong>Commenter:</strong>
+    <strong>De:</strong>
     <%= comment.commenter %>
   </p>
 
   <p>
-    <strong>Comment:</strong>
+    <strong>Comentário:</strong>
     <%= comment.body %>
   </p>
 <% end %>
@@ -25,11 +25,11 @@
 <h2>Deixe aqui seu comentário:</h2>
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
   <p>
-    <%= form.label :commenter %><br>
+    <%= form.label :Nome %><br>
     <%= form.text_field :commenter %>
   </p>
   <p>
-    <%= form.label :body %><br>
+    <%= form.label :Comentário %><br>
     <%= form.text_area :body %>
   </p>
   <p>
