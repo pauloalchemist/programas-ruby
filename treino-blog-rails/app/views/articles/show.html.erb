@@ -13,16 +13,4 @@
 <%= render @article.comments %>
 
 <h2>Deixe aqui seu comentário:</h2>
-<%= form_with model: [ @article, @article.comments.build ] do |form| %>
-  <p>
-    <%= form.label :Nome %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :Comentário %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+<%= render 'comments/form' %>
