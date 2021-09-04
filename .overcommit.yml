@@ -26,9 +26,7 @@ PreCommit:
 
   ErbLint:
     enabled: true
-    on_warn: fail 
 
   RuboCop:
     enabled: true
-    on_warn: fail
     problem_on_unmodified_line: ignore 
