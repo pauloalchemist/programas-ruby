@@ -1,9 +1,15 @@
- <p>
-    <strong>De:</strong>
-    <%= comment.commenter %>
-  </p>
+<p>
+  <strong>De:</strong>
+  <%= comment.commenter %>
+</p>
 
-  <p>
-    <strong>Comentário:</strong>
-    <%= comment.body %>
-  </p>
+<p>
+  <strong>Comentário:</strong>
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Excluir comentário', [comment.article, comment],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>
