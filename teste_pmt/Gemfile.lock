@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    finance_math (1.0.5)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  finance_math (~> 1.0, >= 1.0.5)
+
+BUNDLED WITH
+   2.2.9
