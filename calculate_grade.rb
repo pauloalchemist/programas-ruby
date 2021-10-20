@@ -1,14 +1,14 @@
-def calculate_grade(scores, student)
+def calculate_grade(scores)
   case scores.sum / scores.size
   when 90..100
-    student.update_grade('A')
+    'A'
   when 80...90
-    student.update_grade('B')
+    'B'
   when 70...80
-    student.update_grade('C')
+    'C'
   when 60...70
-    student.update_grade('D')
+    'D'
   else
-    student.update_grade('E')
+    'E'
   end
 end
