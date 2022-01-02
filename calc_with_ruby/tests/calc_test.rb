@@ -12,7 +12,7 @@ describe Calc do
 
   describe 'add' do
     it 'Dever ser igual a 10' do
-      expect(@calc.add(5, 5).must_equal(10))
+      expect(@calc.sum(5, 5).must_equal(10))
     end
   end
 end
