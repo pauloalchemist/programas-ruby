@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-system('bundle check') || system('bundle install')
-
 require 'cli/ui'
 require 'tty-box'
 require_relative './lib/contact'
